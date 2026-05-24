@@ -95,6 +95,7 @@ app.get('/api/protected', apiKeyAuth, (req, res) => {
 });
 
 app.use('/users', require('./routes/users'));
+app.use('/api', require('./routes/api'));
 
 const PORT = process.env.PORT || 5000;
 
